@@ -1,0 +1,89 @@
+@import "./variables.scss";
+.login_page {
+  .logo {
+    width: 15rem;
+    height: 3rem;
+    padding: 5rem;
+    margin-top: 4rem;
+  }
+  section {
+    height: 100%;
+    padding: 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    .left_side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      figure {
+        width: 100%;
+        height: 100%;
+
+        .sticker {
+          width: 40vw;
+          height: 50vh;
+        }
+      }
+    }
+
+    .right_side {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      h2 {
+        color: $color-primary;
+        font-size: 3rem;
+        margin: 0 0 1rem 0;
+      }
+      h4 {
+        color: $sub-head-colors;
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-family: serif;
+        margin: 0 0 3rem 0;
+      }
+
+      .input_section {
+        input {
+          width: 50%;
+          padding: 1.5rem;
+          margin: 0.5rem 0;
+          border: 0.1px solid #777;
+          border-radius: 5px;
+          &::placeholder {
+            color: #777;
+            font-weight: 200;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      p {
+        color: $color-secondary;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        font-weight: 500;
+        font-family: Tahoma;
+        margin: 1rem 0;
+        text-transform: uppercase;
+      }
+      button {
+        width: 55%;
+        padding: 1.2rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        border-style: none;
+        background-color: $color-secondary;
+        color: $background_color;
+        font-size: 1.7rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
